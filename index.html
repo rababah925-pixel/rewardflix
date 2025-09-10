@@ -1,71 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Abs Transformation Secrets</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Rock Solid Abs in 7 Days</title>
     <style>
         body {
-            background: #0d1117;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
             color: #c9d1d9;
             text-align: center;
             padding: 20px;
-            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #1c2129;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
         }
         .hero-image {
             width: 100%;
-            max-width: 400px;
             border-radius: 10px;
-            margin: 20px auto;
+            margin: 20px 0;
         }
-        .article {
-            background: #161b22;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 600px;
-            text-align: left;
-            box-shadow: 0 0 15px rgba(255,255,255,0.1);
-        }
-        .article h2 {
+        h1 {
             color: #58a6ff;
-            text-align: center;
-        }
-        .article h3 {
-            color: #f78166;
+            margin-bottom: 20px;
         }
         .countdown {
-            font-size: 20px;
+            font-size: 24px;
             color: #ff6b6b;
-            margin: 15px 0;
+            margin: 25px 0;
+            font-weight: bold;
+        }
+        .features {
+            text-align: left;
+            margin: 25px 0;
+        }
+        .features h3 {
+            color: #f78166;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 25px;
+            color: #8b949e;
+            font-size: 14px;
         }
     </style>
-    <script>
-        // تحويل بعد 5 ثواني
-        setTimeout(function() {
-            window.location.href = "YOUR_SMART_LINK_HERE"; // ضع الرابط هنا
-        }, 5000);
-    </script>
 </head>
 <body>
-    <h1>Discover The Abs Secrets Fitness Models Use!</h1>
-    <img src="https://i.ibb.co/hJc8rGT/abs-workout.jpg" class="hero-image" alt="Abs Workout">
-    <div class="article">
-        <h2>The 5 Secrets to Unlocking Visible Abs (That Actually Work!)</h2>
-        <p>For years, fitness experts have debated the best ways to achieve defined abdominal muscles. After studying top athletes and scientific research, we've discovered the methods that consistently deliver results:</p>
+    <div class="container">
+        <h1>Discover The #1 Abs Secret Fitness Models Use</h1>
         
-        <h3>1. The 15-Minute Daily Protocol</h3>
-        <p>Research shows that short, focused workouts are more effective than marathon sessions. The key is high-intensity interval training (HIIT) targeting core muscles.</p>
+        <img src="https://i.ibb.co/hJc8rGTs/abs-workout.jpg" class="hero-image" alt="Abs Transformation">
+        
+        <div class="features">
+            <h3>✓ 15-Minute Daily Workouts</h3>
+            <p>Scientific protocol that activates core muscles in record time</p>
+            
+            <h3>✓ Nutrition Timing Formula</h3>
+            <p>Exact protein intake schedule for maximum fat burning</p>
+            
+            <h3>✓ Special Forces Breathing</h3>
+            <p>Ancient technique that targets deep abdominal muscles</p>
+        </div>
 
-        <h3>2. The Forgotten Nutrition Switch</h3>
-        <p>No amount of exercise works without proper nutrition. Discover how timing your protein intake can accelerate fat loss around your midsection.</p>
-
-        <h3>3. The Breathing Technique</h3>
-        <p>An ancient method used by special forces units can activate deep core muscles that regular exercises miss.</p>
-
-        <p><strong>Click anywhere to discover how to implement these techniques...</strong></p>
+        <div class="countdown" id="countdown">5</div>
+        
+        <p>You're being redirected to the exclusive presentation...</p>
+        
+        <div class="footer">
+            © 2025 Fitness Secrets. All rights reserved.
+        </div>
     </div>
-    <div class="countdown">5</div>
-    <p>Redirecting to exclusive offer...</p>
+
+    <script>
+        // Countdown timer
+        let seconds = 5;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(timer);
+                window.location.href = "YOUR_SMART_LINK_HERE"; // Place your smart link here
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
